@@ -35,7 +35,7 @@ async function getWeather(longitude,latitude){  // takes logitude and latitude a
 
 
 async function getLocation(zipcode){
-    let coordinates = await getAPI(`http://api.openweathermap.org/geo/1.0/zip?zip=${zipcode},US&appid=6267599adf2b02ebf4fb74ae8f890df1`);
+    let coordinates = await getAPI(`https://api.openweathermap.org/geo/1.0/zip?zip=${zipcode},US&appid=6267599adf2b02ebf4fb74ae8f890df1`);
 
     return coordinates;
 }
